@@ -29,8 +29,6 @@ FROM Transactions
 SELECT prod_cat,prod_subcat FROM prod_cat_info
 WHERE prod_subcat='DIY'
 
---6)
-
 
 --DATA ANALYSIS
 SELECT TOP 1* FROM Customer
@@ -168,6 +166,7 @@ SELECT TOP 5 prod_cat_code,SUM(Qty) AS QTY_ FROM Transactions
 WHERE Qty > 0
 GROUP BY prod_cat_code
 ORDER BY QTY_ DESC
+
 
 
 
